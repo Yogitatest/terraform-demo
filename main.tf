@@ -10,7 +10,7 @@ locals {
 module "s3_bucket" {
    source = "./modules/S3"
    
-   bucket = ${local.bucket_name}
+   bucket = local.bucket_name
    
    versioning = {
     enabled = true
@@ -27,7 +27,7 @@ module "sqs_queue" {
    source = "./modules/sqs"
    
    
-   name = ${local.sqs_name}
+   name = local.sqs_name
    
    tags = {
     app = "{var.app}"
