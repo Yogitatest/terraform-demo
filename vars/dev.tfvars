@@ -1,4 +1,4 @@
-region = "ap-south-1"
+region = "eu-west-1"
 environment = "dev"
 app  = "demo"
 
