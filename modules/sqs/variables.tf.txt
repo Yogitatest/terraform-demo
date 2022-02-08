@@ -1,4 +1,4 @@
-variable "sqs_name" {
+variable "name" {
   description = "This is the name of the queue. If omitted, Terraform will assign a random name."
   type        = string
 }
