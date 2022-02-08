@@ -15,7 +15,7 @@ module "s3_bucket" {
    
    tags = {
     app = "{var.app}"
-	env = "${var.environment}"
+    env = "${var.environment}"
    }
   
 }
@@ -24,11 +24,11 @@ module "sqs_queue" {
    source = "./modules/sqs"
    
    
-   sqs_name = s3-upload-queue
+   name = s3-upload-queue
    
    tags = {
     app = "{var.app}"
-	env = "${var.environment}"
+    env = "${var.environment}"
    }
    
 }
