@@ -8,7 +8,7 @@ terraform {
   }
   
   backend "s3" {
-    bucket               = "terraform-remote-states"
+    bucket               = "terraform-remote-states-yogita"
     key                  = "tf-workspaces/terraform.tfstate"
     region               = "eu-west-1"
   }
