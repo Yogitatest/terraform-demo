@@ -24,7 +24,7 @@ variable "message_retention_seconds" {
 variable "receive_wait_time_seconds" {
   description = "The time for which a ReceiveMessage call will wait for a message to arrive (long polling) before returning."
   type        = number
-  default     = 30
+  default     = 10
 }
 
 variable "tags" {
