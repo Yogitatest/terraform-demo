@@ -26,3 +26,9 @@ variable "receive_wait_time_seconds" {
   type        = number
   default     = 30
 }
+
+variable "tags" {
+  description = "A mapping of tags to assign to all resources"
+  type        = map(string)
+  default     = {}
+}
