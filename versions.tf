@@ -10,6 +10,6 @@ terraform {
   backend "s3" {
     bucket               = "terraform-remote-states"
     key                  = "tf-workspaces/terraform.tfstate"
-    region               = "us-east-1"
+    region               = "ap-south-1"
   }
 }
