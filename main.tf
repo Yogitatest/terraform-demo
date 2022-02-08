@@ -2,12 +2,15 @@ provider "aws" {
   region = "${var.region}"
 }
 
-
+locals {
+  bucket_name = "log-upload-bucket"
+  sqs_name = "s3-upload-queue"
+}
 
 module "s3_bucket" {
    source = "./modules/S3"
    
-   bucket = log-upload-bucket
+   bucket = ${local.bucket_name}
    
    versioning = {
     enabled = true
@@ -24,7 +27,7 @@ module "sqs_queue" {
    source = "./modules/sqs"
    
    
-   name = s3-upload-queue
+   name = ${local.sqs_name}
    
    tags = {
     app = "{var.app}"
