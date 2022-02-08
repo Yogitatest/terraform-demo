@@ -17,7 +17,7 @@ module "s3_bucket" {
    }
    
    tags = {
-    app = "{var.app}"
+    app = "Demo"
     env = "${var.environment}"
    }
   
@@ -30,7 +30,7 @@ module "sqs_queue" {
    name = local.sqs_name
    
    tags = {
-    app = "{var.app}"
+    app = "demo"
     env = "${var.environment}"
    }
    
