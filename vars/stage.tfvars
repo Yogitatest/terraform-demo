@@ -1,3 +1,3 @@
-region = "ap-south-1"
+region = "eu-west-1"
 environment = "stage"
 app  = "demo"
